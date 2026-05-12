@@ -1,0 +1,106 @@
+/* ============================================
+   VISTA - Estilos personalizados
+   ============================================ */
+
+:root {
+    --color-primario: #198754;
+    --color-claro:    #d1e7dd;
+    --color-fondo:    #f0f2f5;
+    --color-borde:    #dee2e6;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Barra superior */
+#barraSuperior {
+    background: var(--color-primario);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+/* Contenedor principal */
+#contenedorPrincipal {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Título de la página */
+#tituloPagina {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    border-left: 5px solid var(--color-primario);
+    padding-left: 12px;
+}
+
+/* Panel de registro (div oculto) */
+#panelRegistro {
+    display: none;
+    background: #fff;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+#panelRegistro h5 {
+    color: var(--color-primario);
+    font-weight: 700;
+    margin-bottom: 18px;
+    border-bottom: 2px solid var(--color-claro);
+    padding-bottom: 8px;
+}
+
+/* Sección de tabla */
+#seccionTabla {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+#seccionTabla h5 {
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #444;
+}
+
+/* Encabezado de tabla */
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    vertical-align: middle;
+}
+
+/* Celdas de tabla */
+.table tbody td {
+    vertical-align: middle;
+    font-size: 0.88rem;
+}
+
+/* Pie de tabla (total nómina) */
+.table tfoot td {
+    background-color: var(--color-claro);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--color-primario);
+}
+
+/* Botones de la tabla */
+.btn-sm {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+}
